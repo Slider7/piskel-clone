@@ -1,0 +1,30 @@
+.root{
+  --x: 0;
+  --y: 0;
+}
+.pen{
+  height: 46px;
+  width: 46px;
+  background-color: dimgray;
+  border: 1px solid lightgrey;
+  background-image: url('../../icons/piskel-icons.png');
+  background-position: calc(var(--x)px) calc(var(--y)px);
+  margin: 4px 0;
+}
+
+.selected{
+  box-shadow: 0 0 2px 2px rgb(204, 0, 102);
+  background-color: rgb(204, 0, 102);
+}
+
+.brushes{
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) { 
+  .brushes, .brushes-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

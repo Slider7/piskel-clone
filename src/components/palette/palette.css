@@ -1,0 +1,49 @@
+.palette{
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.palette > div:first-child{
+  min-width: 132px;
+}
+
+@media screen and (max-width: 768px) { 
+  .palette{
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.colors{
+  width: 70px;
+  height: 70px;
+}
+
+.color-selector1, .color-selector2 {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+.color-selector1{
+  z-index: 10;
+  top: -50px;
+}
+.color-selector2{
+  z-index: 0;
+  top: 20px;
+  left: 20px;
+}
+
+.btn{
+  background: none;
+  border: 2px solid rgb(204, 0, 102);
+  color: rgb(204, 0, 102);
+}
+.btn:focus {
+  outline: white auto 1px;
+}

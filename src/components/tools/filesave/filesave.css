@@ -1,0 +1,82 @@
+:root {
+  --textcolor: rgb(204, 0, 102);
+}
+
+.file-manager{
+  height: 260px;
+  width: 128px;
+  margin: 10px;
+  margin-top: 20px;
+  border: 2px solid var(--textcolor);
+  background-color: rgb(20, 25, 25);
+  color: var(--textcolor);
+}
+#file{
+  display: none;
+}
+
+.file-save, .size-select{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+select{
+  width: 90%;
+  color: var(--textcolor);
+  background-color: rgb(20, 25, 25);
+  margin: 4px auto;
+}
+select:focus{
+  outline: white auto 1px;
+}
+
+.file-save{
+  margin-top: 20px;
+}
+
+.file-save>button, .file-save>label, #importFile{
+  width: 90%;
+  margin: 4px auto;
+  background: none;
+  border: 2px solid var(--textcolor);
+  color: var(--textcolor);
+}
+
+.file-save>button:focus {
+  outline: white auto 1px;
+}
+
+.file-save>input{
+  width: 90%;
+  margin: 4px auto;
+  color: var(--textcolor);
+}
+
+#importFile{
+  display: none;
+}
+
+@media screen and (max-width: 768px) { 
+  .file-manager{
+    width: 280px;
+    height: 212px;
+    margin-top: 0;
+  }
+  .file-save{
+    column-count: 2;
+    flex-wrap: wrap;
+    height: 130px;
+  }
+  .file-save>button, .file-save>label, .file-save>input, select{
+    width: 85px;
+  }
+  .tools{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

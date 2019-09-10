@@ -1,0 +1,41 @@
+.main-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: rgb(34, 44, 44);
+  color:  rgb(204, 0, 102);
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-buttons{
+  display: inline-block;
+
+}
+
+.header-buttons>button{
+  margin: auto 8px;
+  background: none;
+  border: 2px solid rgb(204, 0, 102);
+  color: rgb(204, 0, 102);
+}
+
+.header-buttons>button:focus {
+  outline: white auto 1px;
+}
+
+.logo{
+  height: 28px;
+  margin: 4px 0;
+}

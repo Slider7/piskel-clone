@@ -1,0 +1,18 @@
+.sizeBtn{
+  height: 25px;
+  width: 25px;
+  background-color:  rgb(204, 0, 102);
+  margin: 1px;
+  border: 2px solid grey;
+}
+
+.pen-size{
+  margin: 5px 0 15px 0;
+}
+
+p{
+  color: rgb(204, 0, 102);
+  font-family: Helvetica, sans-serif;
+  margin: 2px 0;
+  
+}

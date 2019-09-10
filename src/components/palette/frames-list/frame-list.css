@@ -1,0 +1,72 @@
+.frame-list{
+  width: 128px;
+  margin: 2px;
+  overflow: auto;
+  max-height: 564px;
+}
+
+@media screen and (max-width: 768px) { 
+  .frame-list{
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.frame-border{
+  width: 104px;
+  height: 104px;
+  margin: 4px 3px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+.active-frame{
+  box-shadow: 0 0 4px 2px rgb(204, 0, 102);
+  height: 128px;
+}
+
+.frame-canvas{
+  background-size: cover;
+  image-rendering: pixelated;
+  margin: 0;
+  border: 4px solid grey;
+}
+.frame-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(40, 40, 40);
+  border: 2px solid rgb(40, 40, 40);
+  margin-top: -4px;
+  display: none;
+}
+
+.frame-buttons>button{
+  width: 22px;
+  height: 22px;
+  background: rgb(204, 0, 102);
+  background-size: cover;
+  border: 1px solid grey;
+}
+
+.frame-buttons>button:focus {
+  outline: white auto 1px;
+}
+
+.active{
+  display: flex;
+}
+
+#delBtn{
+  background-image: url('../../icons/delete.png');
+}
+#up{
+  background-image: url('../../icons/up.png');
+}
+#down{
+  background-image: url('../../icons/down.png');
+}
+#copyBtn{
+  background-image: url('../../icons/copy.png');
+}

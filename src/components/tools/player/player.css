@@ -1,0 +1,55 @@
+.player{
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+  height: 212px;
+  width: 128px;
+  margin: 0 10px;
+  border: 2px solid rgb(204, 0, 102);
+}
+
+.anim-wrapper{
+  width: 128px;
+  height: 128px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+#animation-view{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.fps-control{
+  background-color: rgb(20, 25, 25);
+  margin: 0;
+  text-align: center;
+}
+
+#speed-label{
+  margin: 4px auto;
+  color: rgb(204, 0, 102);
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: super;
+  text-align: center;
+}
+#speed{
+  color: rgb(204, 0, 102);
+  background-color: rgb(20, 25, 25);
+  margin: 4px;
+  width: 100px;
+}
+.fps-control>button{
+  margin: 4px auto;
+  background: none;
+  border: 2px solid rgb(204, 0, 102);
+  color: rgb(204, 0, 102);
+}
+.fps-control>button:focus {
+  outline: white auto 1px;
+}

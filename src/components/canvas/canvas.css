@@ -1,0 +1,16 @@
+canvas{
+  image-rendering: pixelated;
+}
+.canvas{
+  margin: 0 auto;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+
+.color-selector{
+  user-select: none;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  border: 2px solid rgb(32, 31, 31);
+}
+

@@ -1,0 +1,75 @@
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+  height: 100vh;
+  background-color: rgb(20, 25, 25);
+  min-width: 500px;
+  overflow: auto;
+}
+.workspase{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(20, 25, 25);
+  color: rgb(204, 0, 102);
+}
+
+.canvas-wrapper{
+  width: 482px;
+  height: 482px;
+}
+
+.tools{
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) { 
+  .workspase{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .tools{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+.fs-wrapper{
+  display: none;
+  z-index: 11;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen{
+  background-size: cover; 
+  width: calc(100vh - 8px);
+  height: calc(100% - 8px);
+  margin: 0 auto;
+  border: 4px solid black;
+}
+
+.open{
+  display: block;
+}
+
+.fullscreen > button{
+  margin: 20px;
+  background:  lime;
+  font-weight: bold;
+}
